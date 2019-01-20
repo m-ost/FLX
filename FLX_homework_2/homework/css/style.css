@@ -1,0 +1,139 @@
+p::first-letter {
+  font-size: 30px;
+  color: lightskyblue;
+  line-height: 1;
+}
+
+section, #home {
+  box-shadow: 0px 0px 5px 2px grey;
+}
+
+section::before {
+  content: "";
+  border-left: 250px solid lightskyblue;
+  border-bottom: 40px solid transparent;
+}
+
+h2 + p {
+  font-style: italic;
+}
+
+p {
+  text-indent: 24px;
+  line-height: 2;
+}
+
+.box-bg h2:hover {
+  background: lightskyblue;
+  color: #fff;
+}
+
+.box-work {
+  padding: 10px;
+}
+
+.box-work:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.padding-medium li a:visited {
+  text-decoration-line: underline;
+}
+
+.padding-medium li a:hover {
+  color: lightskyblue;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.padding-medium li a.text::after {
+  content: "New";
+  color: red;
+  font-size: 10px;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.mandatory-field:after {
+  content: "*";
+  color: red;
+}
+
+.tm-banner-text, .box-work p {
+  text-indent: inherit;
+  line-height: inherit;
+}
+
+.box-work p::first-letter {
+  color: inherit;
+}
+
+.flex-item img {
+  max-width: 100%;
+}
+
+section:first-of-type > div:first-child {
+  display: flex;
+}
+
+.tm-banner {
+  border: grey;
+  background: #f5f5f5;
+}
+
+.tm-banner-inner {
+  background: #fff;
+}
+
+.tm-sidebar {
+  box-shadow: 0px 3px 5px 0px grey;
+}
+
+.carousel-inner h2 {
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+
+.contact-form button {
+  float: right;
+  border-radius: 0px;
+  background: #fff;
+  color: lightskyblue;
+  border-color: lightskyblue;
+  font-weight: lighter;
+}
+
+.contact-form button:hover {
+  border-color: lightskyblue;
+  background: lightskyblue;
+  color: #fff;
+}
+
+.tm-main-nav li:hover {
+  background: #f5f5f5;
+}
+
+@media print {
+  .tm-sidebar, section, section > div {
+    display: none;
+  }
+
+  section:first-of-type, section:first-of-type > div:first-child {
+    display: block;
+  }
+
+  section::before {
+    border: none;
+  }
+
+  section .tm-section-title {
+    color: blue;
+  }
+
+  .flex-item img {
+    position: absolute;
+    width: 175px;
+    top: 420px;
+    right: 50px;
+  }
+}
