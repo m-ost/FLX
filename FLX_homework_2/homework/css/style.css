@@ -105,12 +105,12 @@ section:first-of-type > div:first-child {
   border-radius: 0px;
   background: #fff;
   color: lightskyblue;
-  border-color: lightskyblue;
+  border-color: transparent;
   font-weight: lighter;
 }
 
 .contact-form button:hover {
-  border-color: lightskyblue;
+  border-color: transparent;
   background: lightskyblue;
   color: #fff;
 }
