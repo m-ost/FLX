@@ -1,0 +1,45 @@
+body { margin: 0; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; background-color: #efefef; }
+
+header { width: 100%; height: 100vh; min-height: 400px; background: url(../img/header_background_v2.jpg) no-repeat; background-size: cover; background-position: center; }
+header section { margin-top: 37vh; }
+header section h1 { text-transform: uppercase; text-decoration: none; font-size: 26px; font-style: normal; font-weight: 300; font-size: 22px; text-align: center; font-weight: bold; letter-spacing: -0.5px; color: #FF5722; padding-bottom: 0.5%; }
+header section .btn-top { color: #fff; background-color: #0401AC; border: solid 1px transparent; text-align: center; padding: 10px 65px; text-transform: uppercase; text-decoration: none; font-size: 26px; font-style: normal; font-weight: 300; font-size: 12px; margin-left: 43%; padding: 13px 60px; }
+header .top-wrapper { display: flex; flex-direction: row; width: 100%; }
+header .top-wrapper .logo img { width: 43%; height: 98%; }
+header .top-wrapper nav { position: absolute; right: 0; }
+header .top-wrapper nav a { display: inline-block; padding: 19px 104px; text-transform: uppercase; text-decoration: none; font-size: 26px; font-style: normal; font-weight: 300; font-size: 14px; font-weight: bold; color: #FF5722; border-right: 2px solid #fff; }
+header .top-wrapper nav a:last-child { border: none; }
+
+main { margin: 0 auto; width: 890px; }
+main .toolbar { float: right; margin-top: 15px; margin-right: 8px; }
+main .toolbar input { padding: 10px 20px; width: 150px; border: 1px solid #fff; }
+main h1 { clear: both; text-align: right; color: #757575; text-transform: uppercase; padding-top: 15px; letter-spacing: -1px; font-size: 22px; margin: 0; }
+main .post-list img { width: 260px; margin: 10px 10px; height: 260px; }
+main .post-list article { display: flex; flex-direction: row; background-color: #fff; border-color: transparent; margin-bottom: 20px; }
+main .post-list article div { display: inline-block; margin-right: 10px; }
+main .post-list article .btn { color: #fff; background-color: #0401AC; border: solid 1px transparent; text-align: center; padding: 10px 65px; text-transform: uppercase; text-decoration: none; font-size: 26px; font-style: normal; font-weight: 300; font-size: 12px; float: right; }
+main .about, main .contact-form { margin: 50px 12px 0; }
+main .about p, main .contact-form p { margin: 0 0 20px; font-size: 14px; line-height: 1.6em; }
+main .about p:first-child, main .contact-form p:first-child { margin-top: 2px; }
+
+.post { display: inline-block; }
+.post .post-description { padding: 20px 5px 10px; font-size: 12px; color: #757575; }
+.post h3 { border-top: 1px solid #fff; padding-top: 5px; letter-spacing: -0.5px; margin: 0; text-transform: uppercase; text-decoration: none; font-size: 26px; font-style: normal; font-weight: 300; font-size: 17px; color: #607d8b; font-weight: bolder; }
+.post p { margin-top: 5px; text-decoration: none; color: #757575; font-size: 18px; font-style: normal; font-weight: 300; line-height: 1.5em; font-size: 14px; }
+
+.about img { width: 100%; }
+.about img div { text-decoration: none; color: #757575; font-size: 18px; font-style: normal; font-weight: 300; line-height: 1.5px; }
+
+section.contact-form { text-align: right; margin: 40px 0 0; }
+section.contact-form h4 { margin: 0 0 20px; text-align: right; font-size: 14px; color: #757575; text-transform: uppercase; }
+section.contact-form form .half-col { display: inline-block; width: 49%; }
+section.contact-form form .half-col:first-child { float: left; }
+section.contact-form form .full-col { padding: 20px 0; width: 100%; clear: both; }
+section.contact-form form label { color: #607d8b; font-size: 14px; }
+section.contact-form form label:after { content: "*"; }
+section.contact-form form .full-col label:after { content: none; }
+section.contact-form form input, section.contact-form form textarea { width: 99%; min-height: 40px; margin-top: 5px; }
+section.contact-form form textarea { min-height: 100px; }
+section.contact-form form .btn { color: #fff; background-color: #0401AC; border: solid 1px transparent; text-align: center; padding: 10px 65px; text-transform: uppercase; text-decoration: none; font-size: 26px; font-style: normal; font-weight: 300; font-size: 12px; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+footer { font-size: 12px; margin: 0px 15px 15px; }
