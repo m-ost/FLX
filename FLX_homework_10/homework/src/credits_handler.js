@@ -53,7 +53,6 @@ function userCard(creditCardKey) {
       this.cards = [];
       this.maxCardQuantity = 3;
     }
-
     addCard(creditCardKey) {
       if(this.cards.length < this.maxCardQuantity) {
         this.cards.push(userCard(creditCardKey));
@@ -61,7 +60,6 @@ function userCard(creditCardKey) {
         console.error('You have already reached cards quantity limit');
       }
     }
-
     getCardByKey(creditCardKey) {
       return this.cards[creditCardKey - 1];
     }
