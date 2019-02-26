@@ -1,0 +1,85 @@
+/* Your styles go here */
+body {
+  font-family: sans-serif;
+}
+
+#root {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.page1 {
+  display: block;
+}
+
+.page2, .page3 {
+  display: none;
+}
+
+.cancel,
+.save,
+.edit {
+  margin: 5px;
+  padding: 1px 5px;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.checkbox,
+.delete {
+  width: 10%;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+}
+
+#todo {
+  width: 70%;
+}
+
+ li {
+   display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .delete {
+   margin-left: auto;
+ }
+
+.checked a {
+  background: gray;
+}
+
+#toDoInput {
+  margin: 0;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.add-button {
+  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 5px;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.buttons {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}

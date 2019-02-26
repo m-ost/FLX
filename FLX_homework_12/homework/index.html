@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+
+    <div class="page1">
+      <h1>Simple TODO application</h1>
+      <div class="container-add">
+        <button id="add" class="addButton">Add new task</button>
+        <ul id="todo" class="todolist"></ul>
+      </div>
+    </div>
+
+    <div id="new" class="page2">
+      <h2>Add task</h2>
+      <input type="text" id="toDoInput">
+      <div class="buttons">
+        <button id="cancel" class="cancel">Cancel</button>
+        <button id="save" class="save">Save change</button>
+      </div>
+    </div>
+
+    <div id="modify" class="page3">
+      <h2>Modify item</h2>
+      <input type="text" id="edit">
+      <div class="buttons">
+        <button class="cancel">Cancel</button>
+        <button class="update">Save change</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="./src/app.js"></script>
+</body>
+</html>
