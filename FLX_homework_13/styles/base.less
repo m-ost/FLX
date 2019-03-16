@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+h2, h3 {
+    color: @primary-color;
+    margin-top: 2%;
+}
+
+hr {
+    background-color: @primary-color;
+    border: none;
+    height: 1px;
+}
+
+.navbar {
+  li {
+    color: black;
+    :hover{
+      background: @primary-color;
+    }
+  }
+}
+
+.activities {
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+
+  .col-6 {
+    box-sizing: border-box;
+    padding: 1%;
+  }
+
+  .card {
+    border-radius: 0;
+
+    h6 {
+      margin: 0;
+      padding: 3%;
+      font-size: 85%;
+    }
+   }
+
+  .kickboxing-card {
+    background-color: @red-color;
+  }
+
+  .fitness-card {
+    background-color: @primary-color;
+  }
+
+  .zumba-card {
+    background-color: @orange-color;
+  }
+
+  .bootcamp-card {
+    background-color: @green-color;
+  }
+}
+
+footer {
+  background-color: @gray-color;
+  margin-top: 2%;
+  width: 100%;
+  padding: 1%;
+}
