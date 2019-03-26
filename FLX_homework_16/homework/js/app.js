@@ -84,8 +84,8 @@ Racebot.prototype.move = function(direction) {
   } else {
     this.speed = this.defaultSpeed;
     this.previousMove = direction;
-    this.changeCoords(direction);
   }
+  this.changeCoords(direction);
 };
 
 function Speedbot(obj) {
