@@ -1,13 +1,13 @@
 //Task-1
 function assign(targetObj) {
-  for(var i = 1; i < arguments.length; i++) {
+  for(let i = 1; i < arguments.length; i++) {
     Object.keys(arguments[i]).forEach((key) => {
       targetObj[key] = arguments[i][key];
     });
   }
 
   return targetObj;
-};
+}
 
 // var defaults = { a: 123, b: 777 };
 // var options = { a: 456 };
@@ -104,7 +104,7 @@ Speedbot.prototype.prepareEngine = function() {
 
 Speedbot.prototype.move = function(direction) {
   this.changeCoords(direction);
-  if(tdirection && this.speed > this.defaultSpeed) {
+  if(direction && this.speed > this.defaultSpeed) {
     this.speed--;
   }
 };
