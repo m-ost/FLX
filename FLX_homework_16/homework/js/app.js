@@ -60,6 +60,7 @@ Bot.prototype.changeCoords = function(direction) {
     break;
     case 'left':
     this.y -= this.speed;
+    break;
     default:
     console.log(`Oops! I know only basic moves. Please, choose the one from 'up/down/left/right' options.`);
   }
