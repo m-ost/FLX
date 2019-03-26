@@ -20,7 +20,7 @@ function Bot(obj) {
   this.defaultSpeed = obj.speed;
   this.x = obj.x;
   this.y = obj.y;
-  this.type = 'Bot';
+  this.type = this.constructor.name;
 }
 
 Bot.prototype.getSpeed = function() {
