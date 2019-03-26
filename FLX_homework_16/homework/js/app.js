@@ -20,6 +20,7 @@ function Bot(obj) {
   this.defaultSpeed = obj.speed;
   this.x = obj.x;
   this.y = obj.y;
+  this.type = 'Bot';
 }
 
 Bot.prototype.getSpeed = function() {
@@ -50,16 +51,16 @@ Bot.prototype.move = function(direction) {
 Bot.prototype.changeCoords = function(direction) {
   switch(direction) {
     case 'down':
-    this.x += this.speed;
+    this.y -= this.speed;
     break;
     case 'up':
-    this.x += this.speed;
-    break;
-    case 'right':
     this.y += this.speed;
     break;
+    case 'right':
+    this.x += this.speed;
+    break;
     case 'left':
-    this.y -= this.speed;
+    this.x -= this.speed;
     break;
     default:
     console.log(`Oops! I know only basic moves. Please, choose the one from 'up/down/left/right' options.`);
@@ -67,12 +68,13 @@ Bot.prototype.changeCoords = function(direction) {
 };
 
 Bot.prototype.showPosition = function() {
-  console.log(`{this.name} coordinates are: x: ${this.x}; y: ${this.y}.`);
+  console.log(`My name is ${this.type} ${this.name}. I am located at ${this.x}, ${this.y}.`);
 };
 
 function Racebot(obj) {
   Bot.call(this, obj);
   this.previousMove = null;
+  this.type = 'Racebot';
 }
 
 Racebot.prototype = Object.create(Bot.prototype);
@@ -90,6 +92,7 @@ Racebot.prototype.move = function(direction) {
 
 function Speedbot(obj) {
   Bot.call(this, obj);
+  this.type = 'Speedbot';
 }
 
 Speedbot.prototype = Object.create(Bot.prototype);
@@ -101,10 +104,8 @@ Speedbot.prototype.prepareEngine = function() {
 
 Speedbot.prototype.move = function(direction) {
   this.changeCoords(direction);
-  if(direction) {
-    if(this.speed != this.defaultSpeed) {
-      this.speed--;
-    }
+  if(tdirection && this.speed > this.defaultSpeed) {
+    this.speed--;
   }
 };
 
