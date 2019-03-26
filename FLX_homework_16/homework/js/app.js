@@ -16,7 +16,7 @@ function assign(targetObj) {
 //Task - 2
 function Bot(obj) {
   this.name = obj.name;
-  let speed = obj.speed;
+  this.speed = obj.speed;
   this.defaultSpeed = obj.speed;
   this.x = obj.x;
   this.y = obj.y;
