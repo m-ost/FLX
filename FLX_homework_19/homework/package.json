@@ -1,0 +1,26 @@
+{
+  "name": "toolshw",
+  "version": "1.0.0",
+  "description": "Tools hoemwork. Gulp, Yarn. FLX, epam 2019.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "server": "gulp server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^4.4.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-less": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watcher": "^1.0.1"
+  },
+  "dependencies": {}
+}

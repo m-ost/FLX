@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dokdo', cursive;
+  background-color: #001a14;
+}
+
+h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(#00b386, #b3ffec);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.game {
+  width: 100%;
+
+  .rules {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    list-style-type: none;
+
+    li {
+      color: #ccffe5;
+      font-size: 15px;
+      font-weight: 100;
+    }
+  }
+
+  .choises {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px auto;
+    width: 50%;
+
+    .choise {
+      background-color: white;
+      border: 4px solid white;
+      border-radius: 50%;
+      transition: 0.3s;
+      cursor: pointer;
+      
+      .image {
+        width: 100px;
+        height: 100px;
+        background-color: #00e6b0;
+        border: 4px solid #004d3b;
+        border-radius: 50%;
+      }
+    }
+  }
+  .result {
+    color: white;
+    font-size: 20px;
+    margin: 40px auto;
+  }
+  .final-result {
+    margin: 20px auto;
+    width: 200px;
+    color: #ccffe5;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+  .reset-button {
+    font-family: 'Dokdo', cursive;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #ff3300;
+    border-radius: 20%;
+    border: 1px solid #ff3300;
+    background: transparent;
+    margin: 0 auto;
+  }
