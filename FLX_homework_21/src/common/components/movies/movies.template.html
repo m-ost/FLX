@@ -1,0 +1,20 @@
+<div class="search-movie">
+  <input type='text'
+   ng-model='searchText'
+   placeholder="Search a movie" />
+</div>
+<div class="movies">
+  <a ng-repeat="movie in $ctrl.movies | filter:searchText track by $index"
+     class="movies__overview"
+     fresh-movie
+     ui-sref="movie-info({ movieId: movie.id })">
+    <h2>{{movie.title}}</h2>
+    <div class="movie-description">
+      <img src="{{movie.poster_path}}"
+           alt="{{movie.title}}">
+      <h5>{{movie.genres}}</h5>
+      <h4>Release date: {{movie.release_date}}</h4>
+      <p>{{movie.overview ? movie.overview : 'No description available'}}</p>
+    </div>
+  </a>
+</div>

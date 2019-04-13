@@ -1,0 +1,46 @@
+.movies {
+  padding: 40px 70px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__overview {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    padding: 20px;
+
+    &:hover {
+      border-radius: 10%;
+      background-color: rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      color: #c92;
+    }
+
+    div {
+      display: flex;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0 10px;
+    }
+
+    .movie-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      font-size: 18px;
+
+      h5 {
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+  }
+}
