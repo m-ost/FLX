@@ -1,0 +1,81 @@
+<header>
+  <h2>Create New Employee</h2>
+</header>
+
+<div class="card">
+  <div>
+    <span class="label">First name:</span>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="this.employee.name"
+      placeholder="Enter name.."
+    />
+  </div>
+  <div>
+    <span class="label">Last name:</span>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="this.employee.surname"
+      placeholder="Enter last name.."
+    />
+  </div>
+  <div>
+    <span class="label">City:</span>
+    <select [(ngModel)]="this.employee.city">
+      <option [ngValue]="null" [textContent]="'Choose city..'"></option>
+      <option
+        *ngFor="let city of cities"
+        [ngValue]="city"
+        [textContent]="city"
+      ></option>
+    </select>
+  </div>
+  <div>
+    <span class="label">Gender:</span>
+    <span class="content" [textContent]="this.employee.gender"></span>
+    <input
+      type="radio"
+      value="Male"
+      [(ngModel)]="this.employee.gender"
+      name="gender"
+      required
+      #gender="ngModel"
+    />
+    Male
+    <input
+      type="radio"
+      value="Female"
+      [(ngModel)]="this.employee.gender"
+      name="gender"
+      required
+      #gender="ngModel"
+    />
+    Female
+    <input
+      type="radio"
+      value="Not disclosed"
+      [(ngModel)]="this.employee.gender"
+      name="gender"
+      required
+      #gender="ngModel"
+    />
+    Not disclosed
+  </div>
+  <div>
+    <span class="label">Age:</span>
+    <input type="range" [(ngModel)]="this.employee.age" min="16" max="99" />
+    <span class="content" [textContent]="this.employee.age"></span>
+  </div>
+  <div>
+    <span class="label">About employee:</span>
+    <br />
+    <textarea
+      [(ngModel)]="this.employee.summary"
+      placeholder="Enter summary..(optional)"
+    ></textarea>
+  </div>
+</div>
+
+<button (click)="create()" [disabled]="userDataNotFilled">Save</button>

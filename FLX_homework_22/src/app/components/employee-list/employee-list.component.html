@@ -1,0 +1,37 @@
+<header>
+  <h2>Employees</h2>
+</header>
+
+<section>
+  <div class="col">
+    <ul>
+      <li *ngFor="let employee of (employees | filter: searchText)">
+        <div class="employee-row">
+          <span [textContent]="this.employee.name"></span>
+          <span [textContent]="this.employee.surname"></span>
+          <button (click)="remove(this.employee.id)">
+            <img src="/assets/delete.png" />
+          </button>
+          <a [routerLink]="['/employee/edit', this.employee.id]">
+            <img src="/assets/edit.png" />
+          </a>
+          <a [routerLink]="['/employee', this.employee.id]">
+            <img src="/assets/details.png" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="right-col">
+    <input
+      [(ngModel)]="searchText"
+      type="text"
+      name="search"
+      placeholder="Search..."
+    />
+    <a class="add-button" [routerLink]="['/employee/create']">
+      <img src="/assets/add.png" />
+    </a>
+  </div>
+</section>

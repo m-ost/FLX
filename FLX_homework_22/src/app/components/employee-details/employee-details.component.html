@@ -1,0 +1,42 @@
+<header>
+  <h2>View employee details</h2>
+  <a [routerLink]="['/employees']">
+    <img src="/assets/back.png" />
+  </a>
+</header>
+
+<div class="card">
+  <div>
+    <span class="label">First name: </span>
+    <span class="content" [textContent]="this.employee.name"></span>
+  </div>
+  <div>
+    <span class="label">Last name: </span>
+    <span class="content" [textContent]="this.employee.surname"></span>
+  </div>
+  <div>
+    <span class="label">Age: </span>
+    <span class="content" [textContent]="this.employee.age"></span>
+  </div>
+  <div>
+    <span class="label">Gender: </span>
+    <span class="content" [textContent]="this.employee.gender"></span>
+  </div>
+  <div>
+    <span class="label">City: </span>
+    <span class="content" [textContent]="this.employee.city"></span>
+  </div>
+  <div>
+    <span class="label">Summary: </span>
+    <span class="content" [textContent]="this.employee.summary"></span>
+  </div>
+</div>
+
+<div class="buttons">
+  <a [routerLink]="['/employee/edit', this.employee.id]">
+    <img src="/assets/edit.png" />
+  </a>
+  <button (click)="remove()">
+    <img src="/assets/delete.png" />
+  </button>
+</div>
